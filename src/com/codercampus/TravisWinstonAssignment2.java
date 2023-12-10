@@ -16,7 +16,7 @@ public class TravisWinstonAssignment2 {
 		System.out.print("Pick a number between 1 and 100: ");
 		yourGuess = scan.nextInt();
 		
-		while(guesses > 1 || yourGuess == numberToGuess) {
+		while(guesses > 1 || yourGuess == numberToGuess || yourGuess < 1 || yourGuess > 100) {
 			if (yourGuess < 1 || yourGuess > 100) {
 				System.out.println("Your guess is not between 1 and 100, please try again");
 				System.out.println("You still have " + guesses + " guesses left");
